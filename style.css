@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Oswald", sans-serif;
+}
+body{
+    overflow: hidden;
+
+}
+.background{
+    background: linear-gradient(#0077ff);
+    background-image: url(img/eu2.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    max-width: 80%;
+}
+.logo{
+    display: flex;
+    gap: 10rem;
+    font-weight: 300;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 1rem;
+}
+.logo a{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.logo a:hover{
+    color: rgb(3, 216, 38);
+    transition: 0.3s all;
+}
+button{
+    color: #003a03;
+    background: transparent;
+    border-radius: 1rem;
+    border: solid 1px #003a03;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+}
+button:hover {
+    background-color: rgb(175, 255, 175);
+    transition: 0.3s;
+}
+.texto {
+    padding-top: 200px;
+    padding-left: 50px;
+    color: rgb(0, 2, 0); 
+}
+.eumesmo {
+    font-size: 4rem;
+    padding-top:  30px;
+    padding-left: 100px;
+}
+.eumesmo > span {
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100% {
+        color: #009113;
+        text-shadow: 0 0 12px rgb(255, 255, 255), 00 50 px lime, 0 0 100px lime;
+    }
+    10%, 90%{
+        color: #005204;
+        text-shadow: none;
+    }
+    90%, 100%{
+        color: #111;
+        text-shadow: none;
+    }
+    
+}
+.eumesmo > span:nth-child(2){
+    animation-delay: 0.25s;  
+}
+.eumesmo > span:nth-child(3){
+    animation-delay: 0.5s; 
+}
+.eumesmo > span:nth-child(4){
+    animation-delay: 0.75s; 
+}
+.eumesmo > span:nth-child(5){
+    animation-delay: 1s; 
+}
+.eumesmo > span:nth-child(6){
+    animation-delay: 1.25s; 
+}
+.eumesmo > span:nth-child(7){
+    animation-delay: 1.5s; 
+}
+.eumesmo > span:nth-child(8){
+    animation-delay: 1.75s; 
+}
+.eumesmo > span:nth-child(9){
+    animation-delay: 2s; 
+}
+.eumesmo > span:nth-child(10){
+    animation-delay: 2.25s; 
+}
+.eumesmo > span:nth-child(11){
+    animation-delay: 2.5s; 
+}
+.eumesmo > span:nth-child(12){
+    animation-delay: 2.75s; 
+}
+.eumesmo > span:nth-child(14){
+    animation-delay: 3s; 
+}
