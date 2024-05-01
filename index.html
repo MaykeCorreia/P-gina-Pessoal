@@ -15,21 +15,20 @@
         <header>
             <div class="logo">
                 <li>
-                    <a href="index.html">Início</a>
+                    <a href="index.html"><button>Início</button></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/mayke-correia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+                    <a href="https://github.com/MaykeCorreia"><button>GitHub</button></a>
                 </li>
                 <li>
-                    <a href="index2.html">Sobre</a>
+                    <button onclick="carregarTextoSobre()">Sobre</button>
                 </li>
         </div>
-        <a href="https://www.linkedin.com/in/mayke-correia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-        <button> Meu Contato </button>
+        <a href="https://www.linkedin.com/in/mayke-correia">
+        <button> Meu Contato Linkedin</button>
         </a>
         </header>
-        <div class="texto">
-            <div class="text">
+        <div class="texto" id="textoSobre">
                 <h3>Olá, Bem vindo a Minha Página</h3>
                    <div class="eumesmo">         
                          Eu sou</br>
@@ -45,20 +44,11 @@
                         <span>e</span>
                         <span>i</span>
                         <span>a</span>
-                   </div> 
-                </div>         
+                   </div>        
             </div>
         </div>
     </div>
-<button onclick="alterarConteudo()">Alterar Conteúdo</button>
-    <script>
-        function alterarConteudo() {
-          // Seleciona a div pelo id
-          var div = document.getElementById("minhaDiv");
-          
-          // Altera o conteúdo da div
-          div.innerHTML = "Novo Conteúdo";
-        }
-        </script>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
