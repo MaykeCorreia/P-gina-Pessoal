@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Perfil Pessoal</title>
     <link rel="icon" href="img/cpu.png"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -24,7 +24,9 @@
                     <a href="index2.html">Sobre</a>
                 </li>
         </div>
+        <a href="https://www.linkedin.com/in/mayke-correia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
         <button> Meu Contato </button>
+        </a>
         </header>
         <div class="texto">
             <div class="text">
@@ -48,5 +50,15 @@
             </div>
         </div>
     </div>
+<button onclick="alterarConteudo()">Alterar Conteúdo</button>
+    <script>
+        function alterarConteudo() {
+          // Seleciona a div pelo id
+          var div = document.getElementById("minhaDiv");
+          
+          // Altera o conteúdo da div
+          div.innerHTML = "Novo Conteúdo";
+        }
+        </script>
 </body>
 </html>
