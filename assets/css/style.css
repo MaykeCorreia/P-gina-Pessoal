@@ -25,10 +25,13 @@ body {
 }
 
 #textoSobre {
+    padding-top: 100px;
     text-align: left;
     padding-left: 50px;
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    opacity: 40%;
 }
 
 header {
@@ -36,7 +39,7 @@ header {
     justify-content: space-around;
     max-width: 100%;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .projetos {
@@ -221,123 +224,79 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
-    
     body {
-        overflow: hidden;
+        overflow-y: scroll;
     }
-    
+
     .background {
-        background: linear-gradient(#0077ff);
-        background-image: url("../img/eu2.jpeg");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
-    
+
     #textoSobre {
-        text-align: left;
         padding-left: 10px;
         font-size: 18px;
+        color: white;
     }
-    
+
     header {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        padding-left: 80px;
+        padding-left: 10px;
         padding-bottom: 30px;
     }
-    
+
     .logo {
-        display: flex;
         flex-direction: column;
         gap: 1rem;
-        font-weight: 300;
-        cursor: pointer;
-        border: 1px solid black;
         padding: 8px;
-        border-radius: 1rem;
     }
-    
+
     .logo a {
-        color: rgb(0, 0, 0);
         font-size: 15px;
     }
-    
+
     .logo a:hover {
         color: rgb(3, 216, 38);
         transition: 0.3s all;
     }
-    
+
     button {
-        color: #003a03;
-        background: transparent;
-        border-radius: 1rem;
-        border: solid 1px #003a03;
-        font-size: 15px;
-        padding: 5px;
-        width: 150px;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    button:hover {
-        background-color: rgb(175, 255, 175);
-        transition: 0.3s;
-    }
-    
+
     .texto {
-        border-style: none;
-        font-size: 5px;
         padding-top: 20px;
         padding-bottom: 20px;
+        font-size: 1rem;
+        background-color: #111 transparent 50%;
         color: rgb(255, 255, 255);
-        background-color: #111;
-        opacity: 50%;
     }
-    
+
     .eumesmo {
         font-size: 2rem;
         padding-top: 15px;
         padding-left: 20px;
     }
-    
+
     .eumesmo > span {
         animation: none;
     }
 
     .projetos {
-        background-color: #111;
-        color: white;
-        min-height: 1100px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 50px;
-        padding-top: 20px;
+        min-height: auto;
+        padding: 20px;
+        align-items: center;
     }
 
     .projetos p {
-        font-size: 1.2rem;
-        line-height: 1.5;
+        font-size: 1rem;
         max-width: 90%;
-        text-align: center;
     }
 
     footer {
-        background: #111;
-        color: #fff;
         padding: 20px;
-        text-align: center;
-        width: 100%;
-        position: relative;
-        bottom: 0;
         margin-top: 20px;
     }
 }
