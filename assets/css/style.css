@@ -13,7 +13,7 @@ body {
 }
 
 .background {
-    background: linear-gradient(#0077ff);
+    background: linear-gradient(#000000);
     background-image: url("../img/eu2.jpeg");
     background-size: cover;
     background-position: center;
@@ -25,13 +25,17 @@ body {
 }
 
 #textoSobre {
-    padding-top: 100px;
     text-align: left;
     padding-left: 50px;
     font-size: 25px;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    opacity: 40%;
+    color: rgb(0, 0, 0);
+    width: 800px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 2rem;
+    background-color: white;
+    opacity: 50%;
 }
 
 header {
@@ -86,22 +90,22 @@ footer {
 }
 
 .logo a:hover {
-    color: rgb(3, 216, 38);
+    color: rgba(0, 183, 255, 0.56);
     transition: 0.3s all;
 }
 
 button {
-    color: #003a03;
+    color: #000000;
     background: transparent;
     border-radius: 1rem;
-    border: solid 1px #003a03;
+    border: solid 1px #000000;
     font-size: 15px;
     padding: 5px;
     width: 150px;
 }
 
 button:hover {
-    background-color: rgb(175, 255, 175);
+    background-color: rgba(0, 213, 255, 0.91);
     transition: 0.3s;
 }
 
@@ -123,11 +127,11 @@ button:hover {
 
 @keyframes glow {
     0%, 100% {
-        color: #00ae17;
-        text-shadow: 0 0 12px rgb(255, 255, 255), 0 0 50px lime, 0 0 100px lime;
+        color: #00ffffaf;
+        text-shadow: 0 0 12px rgb(255, 255, 255), 0 0 50px rgb(0, 179, 255), 0 0 100px rgb(0, 221, 255);
     }
     10%, 90% {
-        color: #027100;
+        color: #00515a;
         text-shadow: none;
     }
     90%, 100% {
@@ -202,7 +206,7 @@ button:hover {
 }
 
 .projetos li {
-    background-color: #000;
+    background-color: #03565d;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -223,6 +227,13 @@ button:hover {
     color: #666;
 }
 
+.projetos li button {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    size: 10px;
+}
+
 @media screen and (max-width: 767px) {
     body {
         overflow-y: scroll;
@@ -237,7 +248,8 @@ button:hover {
     #textoSobre {
         padding-left: 10px;
         font-size: 18px;
-        color: white;
+        color: rgb(0, 0, 0);
+        width: 350px;
     }
 
     header {
@@ -257,7 +269,7 @@ button:hover {
     }
 
     .logo a:hover {
-        color: rgb(3, 216, 38);
+        color: rgb(0, 119, 143);
         transition: 0.3s all;
     }
 
